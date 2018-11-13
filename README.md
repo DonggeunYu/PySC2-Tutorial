@@ -2,7 +2,6 @@
 
 ## Summary
 DeepMind의 [PySC2]() 튜토리얼입니다.
-
 최종 업데이트는 '2018.11.13'입니다.
 
 ## Table of Contents
