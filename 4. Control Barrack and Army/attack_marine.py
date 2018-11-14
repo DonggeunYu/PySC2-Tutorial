@@ -9,6 +9,8 @@ _BUILD_SUPPLYDEPOT = actions.FUNCTIONS.Build_SupplyDepot_screen.id
 _BUILD_BARRACKS = actions.FUNCTIONS.Build_Barracks_screen.id
 _NOOP = actions.FUNCTIONS.no_op.id
 _SELECT_POINT = actions.FUNCTIONS.select_point.id
+_SELECT_ARMY = actions.FUNCTIONS.select_army.id
+_ATTACK_MINIMAP = actions.FUNCTIONS.Attack_minimap.id
 
 # Features
 _PLAYER_RELATIVE = features.SCREEN_FEATURES.player_relative.index
@@ -37,6 +39,8 @@ class SimpleAgent(base_agent.BaseAgent):
     barracks_built = False
     barracks_selected = False
     barracks_rallied = False
+    army_selected = False
+    army_rallied = False
 
     def transformLocation(self, x, x_distance, y, y_distance):
         if not self.base_top_left:
@@ -105,5 +109,21 @@ class SimpleAgent(base_agent.BaseAgent):
 
         elif obs.observation["player"][_SUPPLY_USED] < obs.observation["player"][_SUPPLY_MAX] and _TRAIN_MARINE in obs.observation["available_actions"]:
             return actions.FunctionCall(_TRAIN_MARINE, [_QUEUED])
+
+        elif not self.army_rallied:
+            if not self.army_selected:
+                if _SELECT_ARMY in obs.observation["available_actions"]:
+                    self.army_selected = True
+                    self.barracks_selected = False
+
+                    return actions.FunctionCall(_SELECT_ARMY, [_NOT_QUEUED])
+            elif _ATTACK_MINIMAP in obs.observation["available_actions"]:
+                self.army_rallied = True
+                self.army_selected = False
+
+                if self.base_top_left:
+                    return actions.FunctionCall(_ATTACK_MINIMAP, [_NOT_QUEUED, [39, 45]])
+
+                return actions.FunctionCall(_ATTACK_MINIMAP, [_NOT_QUEUED, [21, 24]])
 
         return actions.FunctionCall(_NOOP, [])
