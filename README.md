@@ -9,3 +9,4 @@ DeepMind의 [PySC2]() 튜토리얼입니다.
 1. [스타크래프트 2를 알아보자!](https://donggeun.eu/37)
 2. [스타크래프트 2 강화학습 개발환경 설정](https://donggeun.eu/38)
 3. [PySC2로 기본적인 Agent 만들기](https://donggeun.eu/39)
+4. [PySC2 Q-Learning 적용하기](https://donggeun.eu/40)
