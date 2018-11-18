@@ -4,8 +4,8 @@
 DeepMind의 [PySC2](https://github.com/deepmind/pysc2) 튜토리얼입니다.
 
 Translate by Reference: [GitHub](https://github.com/skjb/pysc2-tutorial), [Medium](https://chatbotslife.com/building-a-basic-pysc2-agent-b109cde1477c)
-Thank you for Steven Brown
 
+Thank you for Steven Brown
 최종 업데이트는 '2018.11.18'입니다.
 
 ## Table of Contents
