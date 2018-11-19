@@ -53,8 +53,6 @@ smart_actions = [
 KILL_UNIT_REWARD = 0.2
 KILL_BUILDING_REWARD = 0.5
 
-
-# Stolen from https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow
 class QLearningTable:
     def __init__(self, actions, learning_rate=0.01, reward_decay=0.9, e_greedy=0.9):
         self.actions = actions  # a list
@@ -117,14 +115,15 @@ class SmartAgent(base_agent.BaseAgent):
 
     def step(self, obs):
         super(SmartAgent, self).step(obs)
-
+        temp = obs.observation['single_select']
+        print(temp)
         player_y, player_x = (obs.observation['feature_minimap'][_PLAYER_RELATIVE] == _PLAYER_SELF).nonzero()
         self.base_top_left = 1 if player_y.any() and player_y.mean() <= 31 else 0
 
         unit_type = obs.observation['feature_screen'][_UNIT_TYPE]
 
         depot_y, depot_x = (unit_type == _TERRAN_SUPPLY_DEPOT).nonzero()
-        supply_depot_count = supply_depot_count = 1 if depot_y.any() else 0
+        supply_depot_count = 1 if depot_y.any() else 0
 
         barracks_y, barracks_x = (unit_type == _TERRAN_BARRACKS).nonzero()
         barracks_count = 1 if barracks_y.any() else 0

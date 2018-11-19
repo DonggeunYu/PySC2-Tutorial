@@ -7,7 +7,7 @@ Translate by Reference: [GitHub](https://github.com/skjb/pysc2-tutorial), [Mediu
 
 Thank you for Steven Brown
 
-최종 업데이트는 '2018.11.18'입니다.
+최종 업데이트는 '2018.11.119'입니다.
 
 ## Table of Contents
 1. [스타크래프트 2를 알아보자!](https://donggeun.eu/37)
@@ -15,3 +15,4 @@ Thank you for Steven Brown
 3. [PySC2로 기본적인 Agent 만들기](https://donggeun.eu/39)
 4. [병영 건설과 해병 생산하고 공격하기](https://donggeun.eu/40)
 5. [PySC2 Q-Learning 적용하기](https://donggeun.eu/41)
+6. [Observation 살펴보기](https://donggeun.eu/42)
