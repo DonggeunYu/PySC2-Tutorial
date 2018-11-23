@@ -38,8 +38,6 @@ class SimpleAgent(base_agent.BaseAgent):
     def step(self, obs):
         super(SimpleAgent, self).step(obs)
 
-        time.sleep(0.5)
-
         if self.base_top_left is None:
             player_y, player_x = (obs.observation["feature_minimap"][_PLAYER_RELATIVE] == _PLAYER_SELF).nonzero()
             self.base_top_left = player_y.mean() <= 31
