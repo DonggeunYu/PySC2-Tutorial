@@ -16,3 +16,4 @@ Thank you for Steven Brown
 4. [병영 건설과 해병 생산하고 공격하기](https://donggeun.eu/40)
 5. [PySC2 Q-Learning 적용하기](https://donggeun.eu/41)
 6. [Observation 살펴보기](https://donggeun.eu/42)
+7. [PySC2 Agent에 reward 사용하기](ttps://donggeun.eu/43)
