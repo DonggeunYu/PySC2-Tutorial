@@ -7,7 +7,7 @@ Translate by Reference: [GitHub](https://github.com/skjb/pysc2-tutorial), [Mediu
 
 Thank you for Steven Brown
 
-최종 업데이트는 '2018.11.22'입니다.
+최종 업데이트는 `2019.7.29`입니다.
 
 ## Table of Contents
 1. [PyTorch Summary](https://yudonggeun.github.io/2019/04/11/PyTorch-Summary.html)
