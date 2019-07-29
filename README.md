@@ -10,10 +10,9 @@ Thank you for Steven Brown
 최종 업데이트는 '2018.11.22'입니다.
 
 ## Table of Contents
-1. [스타크래프트 2를 알아보자!](https://blog.donggeun.net/37)
-2. [스타크래프트 2 강화학습 개발환경 설정](https://blog.donggeun.net/38)
-3. [PySC2로 기본적인 Agent 만들기](https://blog.donggeun.net/39)
-4. [병영 건설과 해병 생산하고 공격하기](https://blog.donggeun.net/40)
-5. [PySC2 Q-Learning 적용하기](https://blog.donggeun.net/41)
-6. [Observation 살펴보기](https://blog.donggeun.net/42)
-7. [PySC2 Agent에 reward 사용하기](https://blog.donggeun.net/43)
+1. [PyTorch Summary](https://yudonggeun.github.io/2019/04/11/PyTorch-Summary.html)
+2. [PyTorch Tensors](https://yudonggeun.github.io/2019/04/12/PyTorch-Tensors.html)
+3. [PyTorch autograd](https://yudonggeun.github.io/2019/04/13/PyTorch-Autograd.html)
+4. [PyTorch Neural Network](https://yudonggeun.github.io/2019/04/14/PyTorch-Neural-Network.html)
+5. [PyTorch Image Classification](https://yudonggeun.github.io/2019/04/15/PyTorch-Image-Classification.html)
+6. [PyTorch Image Classification](https://yudonggeun.github.io/2019/04/16/PyTorch-Transfer-Learning.html)
